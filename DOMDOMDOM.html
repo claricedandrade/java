@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <p>Coração de mãe sempre cabe mais um</p>
+    <p>Passe o mouse e veja como meu coração pode expandir...</p>
+
+
+
+
+    <img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" border="0" 
+    src="2764.png" alt="SDDS" width="100" height="100">
+
+
+
+
+<script>
+
+<<img
+src="2764.png"
+onMouseover="document.imagem.src= 'quebrado.png' "
+onMouseout="document.imagem.src= '2764.png' ">
+ 
+<img
+src="imagem-pequena2.jpg"
+onMouseover="document.imagem.src= 'imagem-grande2.jpg' "
+onMouseout="document.imagem.src= 'imagem-normal.jpg' ">
+ 
+<img
+src="imagem-pequena3.jpg"
+onMouseover="document.imagem.src= 'imagem-grande3.jpg' "
+onMouseout="document.imagem.src= 'imagem-normal.jpg' ">
+ 
+<img src="imagem-normal.jpg" name="imagem">
+
+
+Read more: http://www.linhadecodigo.com.br/artigo/3469/criando-rollovers-com-javascript.aspx#ixzz7ilCB3dA7
+
+
+
+function bigImg(x) {
+   
+  x.style.height = "1000px";
+  x.style.width = "1000px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+</script>
+
+</body>
+</html>
